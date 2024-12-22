@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xun Gong - Portfolio</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
+       
+    </head>
+    
+    <body>
+        <header>
+            
+            <div class="name">
+                <a href="#intro"><p>Xun Gong</p></a>
+            </div>
+
+            <nav>
+
+                <a href="#portfolio">Portfolio</a>
+                <a href="#resume">Resume</a>
+<!--                 <a href="#contact">Contact</a> -->
+
+            </nav>
+
+            
+
+        </header>
+
+
+        <section class="intro" id="intro">
+
+
+            <div class="content">
+                <div class="text-content">
+
+                    <h1>I'M Xun Gong</h1>
+                    <br>
+                    <h2>GIS Analyst & Map Maker</h2>
+
+                    <p>I'm currently a graduate student in Cartography and GIS at University of Wisconsin, Madison.  I have a deep passion for creating maps and leveraging geospatial data to tell meaningful stories. For instance, I've been thinking about a map with AnalogHorror recently.</p>
+                    
+                    <div id="contact-box" style="display: none;">
+                        <p>Email: xgong56@wisc.edu</p>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Contact Information">Let's Talk!</button>
+                    <button type="button" class="btn" onclick="toggleContactBox()">LET'S TALK</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        
+        
+        <section class="portfolio" id="portfolio">
+
+            <h2>WELCOME TO MY PORTFOLIO</h2>
+            <p>BELOW YOU CAN FIND A SELECTION OF SOME OF MY MAPS</p>
+            <div class="subtitle1"> 
+                <h3>Print Map</h3>
+            </div>
+
+            <div class="swiper-container-wrapper">
+                <div class="swiper-button-prev swiper-button-prev1"></div>
+                <div class="swiper-container swiper-container1">
+                    <div class="swiper-wrapper">
+
+                        
+                        <div class="swiper-slide">
+                            <p>Personal Income</p>
+                            <img src="image/income.png" alt="Personal Income Map by State, shows percent change per capita in the 2nd quarter 2023." onclick="openModal('Info',src)">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p>Population Growth in U.S. 2008~2016</p>
+                            <img src="image/US_popu.png" alt="Population Growth in U.S. 2008~2016" onclick="openModal('Info',src)">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next1"></div>
+            </div>
+
+            <div class="subtitle1"> 
+                <h3>Web Cartography</h3>
+            </div>
+
+            <div class="swiper-container-wrapper">
+                <div class="swiper-button-prev swiper-button-prev2"></div>
+                <div class="swiper-container swiper-container2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <p>Game of Thrones Style Map</p>
+                            <a href="https://xxenia1.github.io/scrollmap-demo/" target="_blank">
+                                <img src="image/scroll.png" alt="Game of Thrones Style Map">
+                            </a>      
+                        </div>
+            
+                        <div class="swiper-slide">
+                            <p>Bucky Sculpture Walk Tour</p> 
+                            <a href="https://xxenia1.github.io/G572_lab3/" target="_blank">
+                                <img src="image/walk.png" alt="Bucky Sculpture Walk Tour">
+                            </a>     
+                        </div>
+            
+                        <!-- other cards -->
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next swiper-button-next2"></div>
+            </div>
+              
+  
+            
+            <!-- Modal for Full Image -->
+            <div id="Info" class="modal" onclick="closeModal('Info')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="info">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Add more map images or portfolio items here -->
+        </section>
+
+
+        <section class="resume" id="resume">
+            <h2>Resume</h2>
+            
+            <div class="resume-section">
+                <div class="section-header">
+<!--                     <i class="icon-experience"></i> -->
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="entry-details">
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>GISPP Fellow</h4>
+                            <p class="organization">Cartography Lab</p>
+                            <p> Helped Making maps to meet clients requirements</p>
+                        </div>
+                        <div class="entry-date">Jun 2024 - Dec 2024</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>Forest-GIS Intern</h4>
+                            <p class="organization">Aerospace Hongtu Information Technology Co., Ltd. </p>
+                            <p>Participated in building some 3D models of the forestry system smart platform;</p>
+                            <p>Design thematic maps such as the zoning map of the natural disaster comprehensive risk and natural disaster comprehensive prevention and control.</p>
+                        </div>
+                        <div class="entry-date">Jul 2020 - Aug 2020</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="resume-section">
+                <div class="section-header">
+                    <!-- <i class="icon-education"></i> -->
+                    <h3>Education</h3>
+                </div>
+                <div class="entry-details">
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>M.S. in Cartography and Geographic Information System</h4>
+                            <p class="organization">University of Wisconsin - Madison</p>
+                            <p class="courses">GPA:4.0/4.0</p>
+                            <p class="courses">Cartography, GIS, Web and Mobile Programming (JavaScript, Python), Geodatabase, Remote Sensing</p>
+                        </div>
+                        <div class="entry-date">AUG 2024</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>B.S. in Forestry</h4>
+                            <p class="organization">Lakehead University</p>
+                        </div>
+                        <div class="entry-date">Jun 2022</div>
+                    </div>
+                </div>
+         
+            </div>
+
+            <div class="download-resume">
+                <a href="data/Xun Gong CV .pdf" download="Xun Gong CV .pdf">
+                    <button type="button" class="btn btn-primary btn-lg">Download Resume</button>
+                </a>
+            </div>
+
+        </section>
+
+    </body>
+
+    <script type="javascript" src="lib/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,396 @@
+/* Custom Styles for Portfolio */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e4cb !important;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+
+header {
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    padding: 10px 40px;
+    background-color:#418194;
+    z-index: 1000; /* Ensure the header stays on top of other elements */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
+    align-items: center;
+}
+/* #FF69B4 #2F2F2F* #f3dacb/
+
+/* Apply the same font styling to all links in the header */
+header a {
+    font-size: 16px; /* Adjust the font size as needed */
+    text-decoration: none; /* Remove the underline */
+    padding: 10px 0px; /* Optional: Add some padding for spacing */
+}
+
+/* Specific styling for the name link */
+.name a {
+    font-weight: bold; /* Make the name bold if desired */
+    font-size: 25px; /* Adjust the size of the name */
+    color: rgb(255, 255, 255); /* Set the color to black */
+    text-decoration: none; /* Remove the underline */
+
+}
+
+
+
+nav a {
+    margin-left:20px;
+    text-decoration:none;
+    color:#ffffff;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #418194;
+}
+
+.intro h1 {
+    font-size: 5rem;
+    padding-top: 10px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #418194;
+    margin-bottom: 1rem;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #60730c;
+    margin-bottom: 1rem;
+    margin-top: 8 rem;
+    width:100%;
+    text-align:center;
+}
+
+.intro p {
+    font-size: 1.25rem;
+    color: #797478;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+#contact-box {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 200px;
+    z-index: 1000;
+}
+
+.portfolio p {
+    font-size: 1.25rem;
+    color: #B0BEC5;
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Default is row (side by side) */
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    width:100%;
+}
+
+.text-content {
+    position:relative;
+    /* flex:1; */
+    margin:80px;
+    width:60%;
+    z-index:2;
+}
+
+.image-content {
+    position:relative;
+    width: 50%;
+    max-width:100%;
+    z-index:1;
+    left: -40px; /* Shift the image to the left to overlap the text */
+}
+
+
+.image-content img {
+    width:50%;
+    height:20%;
+    object-fit:cover;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #44456e;
+}
+
+.subtitle1 {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #B39CD0;     /* Dark grey text */
+    text-align: center; /* Center align the subtitle */
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Add spacing between the subtitle and the maps */
+    font-weight: bold;   /* Make the subtitle bold */
+    width: 100%;
+    display: block;       /* Ensure it stays on its own line */
+}
+
+
+
+.swiper-container-wrapper {
+    position: relative;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 50px; /* Make room for the buttons */
+}
+
+.swiper-container {
+    position: relative; /* This allows absolutely positioned children to be positioned relative to the container */
+    width: 80%;
+    height: 100%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+
+  
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #4A5568;
+    border: 0px solid #080808;
+    padding-top: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), /* Larger shadow */
+    0 4px 8px rgba(0, 0, 0, 0.1); /* Softer inner shadow */
+    transition: transform 0.3s ease;
+    height:auto;
+    border-radius: 20px;
+
+    width: 100%; /* This ensures that each slide takes full width of the swiper container */
+
+}
+
+/* #2f2f2f */
+  
+.swiper-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    display:block;
+    margin-bottom:20px;
+    /* border-radius: 8px; */
+}
+
+
+.swiper-slide p {
+    font-size: 1.2rem; /* Adjust the size */
+    color: #E2E8F0; /* Adjust text color */
+    text-align: center; /* Center align the text */
+    padding:2px;
+}
+
+/* #f3e4cb */
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+  
+/* Style and position for both navigation buttons */
+.swiper-button-next, .swiper-button-prev {
+    position: absolute; /* Position the buttons absolutely relative to the swiper container */
+    top: 50%; /* Vertically center the buttons */
+    transform: translateY(-50%); /* Ensure they are fully centered vertically */
+    width: 40px; /* Custom width for buttons */
+    height: 40px;
+    background-color: #ee90c2; /* Semi-transparent background for the buttons */
+    border-radius: 50%; /* Make buttons circular */
+    z-index: 999; /* Ensure the buttons are above other elements */
+    padding:10px;
+}
+  
+
+  /* First Swiper buttons */
+.swiper-button-prev1 {
+    left: 70px; /* Adjust the left position as needed */
+}
+.swiper-button-next1 {
+    right: 70px; /* Adjust the right position as needed */
+}
+
+/* Second Swiper buttons */
+.swiper-button-prev2 {
+    left: 70px; /* Adjust the left position for the second swiper */
+}
+.swiper-button-next2 {
+    right: 70px; /* Adjust the right position for the second swiper */
+}
+  
+  /* Customize the arrow icons inside the buttons */
+  .swiper-button-next::after, .swiper-button-prev::after {
+    color: white; /* White arrow icon */
+    font-size: 20px; /* Adjust the size of the arrow */
+  }
+  
+
+
+
+
+#resume {
+    padding: 40px;
+    width:80%;
+    margin: 0 auto;
+    color:#797478;
+
+}
+
+.resume h2 {
+    font-size: 2.5rem;
+    color: #9373b7;
+    margin-bottom: 1rem;
+    margin-top: 8 rem;
+    width:100%;
+    text-align:center;
+}
+
+.resume-section {
+    margin-bottom: 40px;
+    display:grid;
+    grid-template-columns: 1fr 3fr; /* Left column 1 fraction, right column 3 fractions */
+}
+
+.section-header {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.section-header i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.section-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resume-entry {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.entry-details h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.entry-details .organization {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.entry-details p {
+    margin-bottom: 10px;
+}
+
+.entry-date {
+    text-align: right;
+    color: #666;
+}
+
+.courses {
+    font-style: italic;
+}
+
+.download-resume {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.download-btn:hover {
+    background-color: #ec76b5; /* Darker green on hover */
+}
+
+
+  
+
+/* Modal (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 60px; /* Location of the image */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+}
+
+/* Modal Content (the image) */
+.modal-content {
+    margin: auto;
+    cursor: zoom-in;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom transitions */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color:#9373b7;
+    color: rgb(219, 219, 219); /* Same text color as the header */
+    padding: 10px;
+    text-align: center;
+}
+
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Close the modal by clicking anywhere */
+.modal:target {
+    display: none; /* If the user clicks anywhere, close the modal */
+}
+
+html {
+    scroll-padding-top: 60px; /* Adjust this value to match the height of your header */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack text and image vertically */
+    }
+
+    .image-content {
+        margin-top: 20px; /* Add spacing between text and image */
+        width:60%;
+        align-items:center;
+    }
+}
+
+
